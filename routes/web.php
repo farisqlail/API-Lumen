@@ -17,7 +17,7 @@
 //     return view('welcome');
 // });
 
-$router->group(['prefix'=>'api/v1'], function() use($router){
+$router->group(['prefix'=>'api/'], function() use($router){
     $router->get('/blogs', 'BlogController@index');
     $router->post('/blogs', 'BlogController@create');
     $router->get('/blogs{id}', 'BlogController@show');
