@@ -22,5 +22,5 @@ $router->group(['prefix'=>'api/v1'], function() use($router){
     $router->post('/blogs', 'BlogController@create');
     $router->get('/blogs{id}', 'BlogController@show');
     $router->put('/blogs{id}', 'BlogController@update');
-    $router->get('/blogs{id}', 'BlogController@show');
+    $router->delete('/blogs{id}', 'BlogController@destroy');
 });
