@@ -13,9 +13,9 @@
 |
 */
 
-// $router->get('/home', function () {
-//     return view('welcome');
-// });
+$router->get('/', function () {
+    return 'Welcome';
+});
 
 $router->group(['prefix'=>'api/'], function() use($router){
     $router->get('/blogs', 'BlogController@index');
