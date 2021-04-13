@@ -20,7 +20,7 @@
 $router->group(['prefix'=>'api/'], function() use($router){
     $router->get('/blogs', 'BlogController@index');
     $router->post('/blogs', 'BlogController@create');
-    $router->get('/blogs{id}', 'BlogController@show');
-    $router->put('/blogs{id}', 'BlogController@update');
-    $router->delete('/blogs{id}', 'BlogController@destroy');
+    $router->get('/blogs/{id}', 'BlogController@show');
+    $router->put('/blogs/{id}', 'BlogController@update');
+    $router->delete('/blogs/{id}', 'BlogController@destroy');
 });
